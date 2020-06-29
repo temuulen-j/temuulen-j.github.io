@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>噬心's Blog</title>
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/><!--hoyor-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><!--hoyor-->
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+    <link rel="shortcut icon" href="image/tubiao.ico">
+    <script src="js/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="css/backpc.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1280px)">
+<link href="css/backmo.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1280px)">
+<style>
+  html,body{
+    padding: auto;
+  }
+</style>
+</head>
+<body>
+  <div class="stars"></div>  <!--背景层，不要删除，不然没有作用-->
+  <script src="js/star.js"></script>
+  <div class="center">
+    <center>
+    <div style="text-align: center;">
+      <br><br>
+      <img class="round_icon" src="image/touxiang.gif">
+    </div>
+    <h2 class="lobster" style="color: white;text-align: center;">Welcome To My Blog</h2>
+
+    <div class="text" style="background: rgba(0,0,0,0.2);text-align: center; width:auto;height: auto;border-radius: 6px;">
+      <div id="gitalk-container" style="margin: 5px;"></div>
+      <script type="text/javascript">
+      var gitalk = new Gitalk({
+      // gitalk的主要参数
+          clientID: '39bf2f813b57af545917',
+          clientSecret:'c58b27ef269357bb611fbe793fe04f33a6b738df',
+          repo: 'temuulenj.github.io',
+          owner: 'temuulenj',
+          admin: ['temuulenj'],
+          id: (location.pathname).split("/").pop().substring(0, 49),
+          distractionFreeMode: false
+      
+      });
+      gitalk.render('gitalk-container');
+  </script>
+  <!-- Gitalk end -->
+    </div>
+    <!--友情链接-->
+    <div class="text" style="background: rgba(0,0,0,0.2);text-align: center; width:auto;border-radius: 6px;margin-top: 3px;padding: 0 0;">
+      <h4 style="margin: 0%;">友情链接: <a href="https://conan8023.github.io" style="color: white;">鸹貔</a> </h4>
+     </div>
+     <!--友情链接end-->
+    <div class="text" style="background-color:rgba(0,0,0,0);">
+      <h4 style="margin: 0;">------end------</h4><br>
+    </div>
+    </center>
+  </div>
+    <!--底部栏-->
+    <div style="font-family: lobster;color: white;text-align: center;" class="footer">
+      <span id="span"></span><script src="js/time.js"></script>
+    </div>
+    <!--顶部导航栏-->
+    <div style="flex-direction:row; font-family:lobster;color:white;text-align:center;" class="top">
+      <form action="homepage.html" style="display: inline;" method="GET">
+        <input type="submit" class="topbtn" value="首    页"/>
+      </form>
+      <form action="images.html" style="display: inline;" method="GET">
+        <input type="submit" class="topbtn" value="相    册"/>
+      </form>
+      <form action="index.html" style="display: inline;" method="GET">
+        <input type="submit" class="topbtn" value="简    介"/>
+      </form>
+      <form action="homepage1.html" style="display: inline;" method="GET">
+        <input type="submit" class="topbtn" value="没想好要写啥"/>
+      </form>
+      <form action="message.html" style="display: inline;" method="GET">
+        <input type="submit" class="topbtn" value="留    言"/>
+      </form>
+    </div>
+    <!--hoyor-->
+    <div class="waifu">
+      <div class="waifu-tips"></div>
+      <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+      <div class="waifu-tool">
+          <span class="fui-home"></span>
+          <span class="fui-chat"></span>
+          <span class="fui-eye"></span>
+          <span class="fui-user"></span>
+          <span class="fui-photo"></span>
+          <span class="fui-info-circle"></span>
+          <span class="fui-cross"></span>
+      </div>
+  </div>
+  <script src="assets/waifu-tips.js"></script>
+  <script src="assets/live2d.js"></script>
+  <script type="text/javascript">initModel("assets/")</script>
+  </div>
+  <!--hoyor end-->
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Github免费搭建个人网站</title>
+    </script>
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/><!--hoyor-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><!--hoyor-->
+    <link href="css/backpc.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1280px)">
+    <link href="css/backmo.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1280px)">
+    <link rel="shortcut icon" href="image/tubiao.ico">
+    <script src="js/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+      img:hover{
+      transform: scale(2);
+      }
+      ol{
+        padding:auto;
+      }
+      a{
+        color: white;
+      }
+      a:hover{
+        color:coral;
+      }
+      li{
+        margin:10px 0;
+      }
+      h1,h2,h3,h4,h5,h6{
+        margin: 0;
+
+      } 
+
+    </style>
+</head>
+<body>
+  <div class="stars"></div>  <!--背景层，不要删除，不然没有作用-->
+  <script src="js/star.js"></script>
+      <!--顶部导航栏-->
+      <div style="flex-direction:row; font-family:lobster;color:white;text-align:center;" class="top">
+        <form action="homepage.html" style="display: inline;" method="GET">
+          <input type="submit" class="topbtn" value="首    页"/>
+        </form>
+        <form action="images.html" style="display: inline;" method="GET">
+          <input type="submit" class="topbtn" value="相    册"/>
+        </form>
+        <form action="index.html" style="display: inline;" method="GET">
+          <input type="submit" class="topbtn" value="简    介"/>
+        </form>
+        <form action="message.html" style="display: inline;" method="GET">
+          <input type="submit" class="topbtn" value="留    言"/>
+        </form>
+        <form action="https://conan8023.github.io" style="display: inline;" method="GET">
+          <input type="submit" class="topbtn" value="友情链接:鸹貔"/>
+        </form>
+      </div>
+  <div class="center">
+    <center>
+    <div style="text-align: center;">
+      <br><br>
+      <img class="round_icon" src="image/touxiang.gif">
+    </div>
+    <h2 class="lobster" style="color: white;text-align: center;">Welcome To My Blog</h2><br>
+    <!--正 文-->
+    <div class="text" style="background: rgba(0,0,0,0.2);text-align: center; width:auto;height: auto;border-radius: 6px;">
+      <h2 style="margin-bottom: 0%;">
+        <strong>Github免费搭建个人网站</strong>
+      </h2><br>
+      <h3 style="text-align: left;margin-top: 0%;">
+        &nbsp学习前端的人应该知道，开始学习前端时，心里想的肯定是我一定要给自己做一个的非常棒的网站，学完之后网站做好了，但是要怎么上线呢？？<br>
+        &nbsp下面我就给大家讲讲如何用Github免费搭建自己的网站
+      </h3>
+    </div>
+    <div class="text" style="background: rgba(0,0,0,0.2);text-align: center; width:auto;height: auto;border-radius: 6px;">
+      <ol style="text-align: left;">
+        <li style="text-align: left;">
+          <h3 style="display: flex;">创建一个Github(<a href="https://github.com">点击注册</a>)账号</h3><br>
+          <img style="width: 80%;height: auto;" src="image/git/1.png">
+        </li>
+        <li>
+          <h3 style="text-align: left;">创建存储库<h5>(图片已翻译)</h5></h3>
+          <img style="width:80%" src="image/git/2.png">
+          <img style="width: 80%;" src="image/git/3.png">
+        </li>
+        <li>
+          <h3 style="text-align: left;">发布<h5>找到Setting里面的GitHub Pages把源(Source)改成master branch</h5></h3>
+          <img style="width: 80%;" src="image/git/4.png">
+          <img style="width: 80%;" src="image/git/5.png">
+        </li>
+        <li>
+          <h5 style="text-align: left;">第三步完成之后会刷新网页<br>刷新之后再到GitHub Pages会生成一个链接<br>这个链接便是你的主页啦！</h5>
+          <img style="width: 80%;" src="image/git/6.png">
+        </li>
+      </ol>
+    </div>
+    <!--正 文 end-->
+    <!--友情链接-->
+    <div class="text" style="background: rgba(0,0,0,0.2);text-align: center; width:auto;border-radius: 6px;margin-top: 3px;padding: 0 0;">
+     <h4 style="margin: 0%;">友情链接: <a href="https://conan8023.github.io" style="color: white;">鸹貔</a> </h4>
+    </div>
+    <!--友情链接end-->
+    <div class="text" style="background-color:rgba(0,0,0,0);">
+      <h4>------end------</h4><br>
+    </center>
+
+  </div>
+    <!--底部栏-->
+    <div style="font-family: lobster;color: white;text-align: center;padding: 0px;" class="footer">
+      <span id="span" style="padding: 0;"></span><script src="js/time.js"></script>
+    </div>
+    </div>
+        <!--hoyor-->
+        <div id="right">
+        <div class="waifu">
+          <div class="waifu-tips"></div>
+          <canvas id="live2d" width="350" height="250" class="live2d"></canvas>
+          <div class="waifu-tool">
+              <span class="fui-home"></span>
+              <span class="fui-chat"></span>
+              <span class="fui-eye"></span>
+              <span class="fui-user"></span>
+              <span class="fui-photo"></span>
+              <span class="fui-info-circle"></span>
+              <span class="fui-cross"></span>
+          </div>
+      </div>
+      <script src="assets/waifu-tips.js"></script>
+      <script src="assets/live2d.js"></script>
+      <script type="text/javascript">initModel("assets/")</script>
+      </div>
+    </div>
+      <!--hoyor end-->
+</body>
+</html>
