@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>噬心's Blog</title>
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/><!--hoyor-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><!--hoyor-->
+    <link rel="shortcut icon" href="image/tubiao.ico">
+    <script src="js/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="css/backpc.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1280px)">
+    <link href="css/backmo.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1280px)">
+    <style>
+      .lobster{
+        font-family: Lobster;
+      }
+      .table{
+      	width: 400px;
+      	height: auto;
+      	margin: 80px auto;
+      }
+      .table form{
+      	width: 100%;
+      }
+      .table .name{
+      	width: 280px;
+      	margin: 20px auto 30px auto;
+        display: block;
+      	height: 30px;
+      	border-radius: 20px;
+      	border: none;
+      	background: rgba(0,0,0,0.2);
+      	text-indent: 0.5em;
+      }
+      .table .btn{
+      	width: 100px;
+      	height: 30px;
+      	background: rgba(0,0,0,0.1);
+      	border-radius: 8px;
+      	border: none;
+        color: white;
+      	margin: 0 auto;
+      	display: block;
+      }
+      .round_icon{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+      }
+    </style>
+</head>
+<body>
+  <div class="stars"></div>  <!--背景层，不要删除，不然没有作用-->
+  <div class="table">
+    <div style="text-align: center;">
+    <img class="round_icon" src="image/touxiang.gif">
+    </div>
+  	<h2 class="lobster" style="color: white;text-align: center;">Welcome To My Blog</h2>
+    <div style="width: 100%;height:300px;background: url(image/default.jpeg) no-repeat;background-size: 100%;opacity: 0.5;"></div>
+    <form action="homepage.html" style="margin-top: 20px;" method="GET">
+      <input type="submit" class="btn" value="进入"/>
+    </form>
+    <script src="js/star.js"></script>
+  </div>
+  <!--底部栏-->
+  <div style="font-family: lobster;color: white;text-align: center;" class="footer">
+    			    <!--友情链接-->
+              <div class="text" style="background:rgba(0,0,0,0);text-align: center; width:auto;border-radius: 6px;margin-top: 3px;">
+                <h4 style="margin: 0%;">友情链接: <a href="https://conan8023.github.io" style="color: white;">鸹貔</a> </h4>
+                 </div>
+                 <!--友情链接end-->
+    <span id="span"></span><script src="js/time.js"></script>
+  </div>
+  <!--end-->
+    <!--hoyor-->
+    <div class="waifu">
+      <div class="waifu-tips"></div>
+      <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+      <div class="waifu-tool">
+          <span class="fui-home"></span>
+          <span class="fui-chat"></span>
+          <span class="fui-eye"></span>
+          <span class="fui-user"></span>
+          <span class="fui-photo"></span>
+          <span class="fui-info-circle"></span>
+          <span class="fui-cross"></span>
+      </div>
+  </div>
+  <script src="assets/waifu-tips.js"></script>
+  <script src="assets/live2d.js"></script>
+  <script type="text/javascript">initModel("assets/")</script>
+  </div>
+  <!--hoyor end-->
+</body>
+</html>
